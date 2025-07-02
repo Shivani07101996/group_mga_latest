@@ -1,0 +1,38 @@
+[
+  {
+    "img": "/assets/images/testimoial/testimonialProfileThumb1_1.jpg",
+    "subTitle": "Insurance Broker",
+    "title": "Sarah Mitchell",
+            "desc": "PolicyAdvisoreXchange has transformed our group benefits practice. We're closing 40% more deals and spending half the time on admin. The multi-carrier quoting alone has saved us hours every week."  
+  },
+  {
+    "img": "/assets/images/testimoial/testimonialProfileThumb1_2.jpg",
+    "subTitle": "Agency Owner",
+    "title": "Michael Chen",
+    "desc": "The marketing services are incredible. Our new website generates qualified leads every week, and the SEO content positions us as the local group benefits experts."
+  },
+  {
+    "img": "/assets/images/testimoial/testimonialProfileThumb1_3.jpg",
+    "subTitle": "Senior Broker",
+    "title": "Jennifer Rodriguez",
+    "desc": "I was skeptical about paperless enrollment, but clients love it. The digital forms are so much faster than traditional paperwork, and error rates have dropped significantly."
+  },
+  {
+    "img": "/assets/images/testimoial/testimonialProfileThumb1_1.jpg",
+    "subTitle": "Regional Manager",
+    "title": "David Thompson",
+    "desc": "Our team productivity has skyrocketed. The AI-powered plan comparisons help us present the best options to clients instantly. It's like having an expert underwriter on every call." 
+  }, 
+  {
+    "img": "/assets/images/testimoial/testimonialProfileThumb1_2.jpg",
+    "subTitle": "Independent Broker",
+    "title": "Lisa Park",
+    "desc": "The cross-selling intelligence is amazing. The platform suggests HSAs and wellness programs I would have missed. My commission per case has increased by 35%."
+  },
+  {
+    "img": "/assets/images/testimoial/testimonialProfileThumb1_3.jpg",
+    "subTitle": "Benefits Consultant",
+    "title": "Robert Johnson",
+    "desc": "Customer support is outstanding. When I have complex underwriting questions, their experts respond immediately. It's like having a whole team backing me up."
+  }  
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "number": "01",
+    "title": "Research project",
+    "desc": "There are many varations of passages of Loreum available, but the majority have suffered alteration" 
+  },
+  {
+    "number": "02",
+    "title": "Start optimize",
+    "desc": "There are many varations of passages of Loreum available, but the majority have suffered alteration" 
+  },
+  {
+    "number": "03",
+    "title": "Find ideas",
+    "desc": "There are many varations of passages of Loreum available, but the majority have suffered alteration" 
+  },
+  {
+    "number": "04",
+    "title": "Reach target",
+    "desc": "There are many varations of passages of Loreum available, but the majority have suffered alteration" 
+  },
+  {
+    "icon": "/assets/images/icon/wpIcon2_1.svg",
+    "title": "Upload & analyze your client's needs",
+    "desc": "Simply upload your client details or census data. Our intelligent system analyzes their industry, employee demographics, and current coverage to understand exactly what they need."
+  },
+  {
+    "icon": "/assets/images/icon/wpIcon2_2.svg", 
+    "title": "Get instant multi-carrier quotes",
+    "desc": "Within minutes, receive comprehensive quotes from Canada's top insurers. No more waiting days for responses or playing phone tag with underwriters."
+  },
+  {
+    "icon": "/assets/images/icon/wpIcon2_3.svg",
+    "title": "Present & close with confidence",
+    "desc": "Generate professional, branded proposals that showcase multiple options. Our built-in comparison tools help clients see the value, making your closing conversations much easier."
+  }
+]
