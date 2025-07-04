@@ -30,7 +30,7 @@ const Cta1 = ({subtitle,title,content,btnurl1,btnurl2,img,onBtn1Click,onBtn2Clic
                                                 alignItems: 'center', 
                                                 gap: '8px',
                                                 backgroundColor: '#fff',
-                                                color: '#8B4CF6',
+                                                color: 'rgb(216, 22, 113)',
                                                 padding: '15px 30px',
                                                 borderRadius: '50px',
                                                 fontWeight: '600',

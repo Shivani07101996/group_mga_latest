@@ -9,7 +9,7 @@ const Feature1 = () => {
                     <div className="section-title text-center mxw-685 mx-auto wow fadeInUp" data-wow-delay=".2s" suppressHydrationWarning={true}>
                         <SectionTitle
                             SubTitle="Why Choose PolicyAdvisoreXchange 🔥"
-                            Title="Our Platform Is Perfect For Solo Brokers, Growing Agencies And Large Brokerages"
+                            Title="Our platform is perfect for solo brokers, growing agencies and large brokerages"
                         ></SectionTitle>                       
                     </div>
                     <div className="wcu-wrapper style1">
@@ -17,17 +17,17 @@ const Feature1 = () => {
                             <div className="col-xl-4 col d-flex justify-content-center">
                                 <div className="wcu-content">
                                     <FeatureCard
-                                        img="/assets/images/icon/wcuIcon1_1.svg"
+                                        img="/assets/images/icon/wcuIcon1_1.png"
                                         title="Smart Plan Analysis"
                                         content="AI-powered comparisons show clients the best options instantly."
                                     ></FeatureCard>
                                      <FeatureCard
-                                        img="/assets/images/icon/wcuIcon1_2.svg"
+                                        img="/assets/images/icon/wcuIcon1_2.png"
                                         title="All Carriers, One Platform"
                                         content="Quick quotes from all major carriers in one place."
                                     ></FeatureCard>    
                                       <FeatureCard
-                                        img="/assets/images/icon/wcuIcon1_3.svg"
+                                        img="/assets/images/icon/wcuIcon1_3.png"
                                         title="Smart Digital Forms"
                                         content="Paperless enrollment eliminates manual paperwork."
                                     ></FeatureCard> 
@@ -43,17 +43,17 @@ const Feature1 = () => {
                             <div className="col-xl-4 d-flex justify-content-center">
                                 <div className="wcu-content">
                                     <FeatureCard
-                                        img="/assets/images/icon/wcuIcon1_4.svg"
+                                        img="/assets/images/icon/wcuIcon1_4.png"
                                         title="Live Professional Help"
                                         content="Expert support for complex cases and underwriting questions."
                                     ></FeatureCard>
                                     <FeatureCard
-                                        img="/assets/images/icon/wcuIcon1_5.svg"
+                                        img="/assets/images/icon/wcuIcon1_5.png"
                                         title="Cross-Selling Intelligence"
                                         content="AI recommendations increase commission per case."
                                     ></FeatureCard>                                                                          
                                     <FeatureCard
-                                        img="/assets/images/icon/wcuIcon1_6.svg"
+                                        img="/assets/images/icon/wcuIcon1_6.png"
                                         title="Hands-Free Admin"
                                         content="Automated renewals, billing and compliant submissions."
                                     ></FeatureCard> 

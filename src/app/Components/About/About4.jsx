@@ -16,7 +16,7 @@ const About4 = ({img1,img2,subtitle,title,content,FeatureList,btnname,btnurl}) =
                                     <Image src="/assets/images/shape/aboutThumbShape1_1.png" alt="img" width={67} height={67}   />
                                         </div>
                                     <div className="thumbShape2 d-none d-xxl-block cir36">
-                                    <Image src="/assets/images/shape/aboutThumbShape1_2.png" alt="img" width={24} height={24}   />
+                                    <Image src="/assets/images/shape/aboutThumbShape1_4.png" alt="img" width={24} height={24}   />
                                         </div>
                                     <div className="thumbShape3 d-none d-xxl-block cir36 float-bob-y">
                                     <Image src="/assets/images/shape/aboutThumbShape1_3.png" alt="img" width={200} height={200}   />
@@ -44,7 +44,7 @@ const About4 = ({img1,img2,subtitle,title,content,FeatureList,btnname,btnurl}) =
                                     </div>
                                     <ul className="checklist style1 wow fadeInUp" data-wow-delay=".2s">
                                     {FeatureList?.map((item, index) => (
-                                        <li key={index}><Image src="/assets/images/icon/checkmarkIcon.svg" alt="img" width={30} height={30}   /> {item}</li>
+                                        <li key={index}><Image src="/assets/images/icon/checkmarkicon.png" alt="img" width={30} height={30}   /> {item}</li>
                                     ))}
                                     </ul>
                                     <Link className="theme-btn wow fadeInUp" data-wow-delay=".2s" href={btnurl}>{btnname}

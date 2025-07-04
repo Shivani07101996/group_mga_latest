@@ -17,15 +17,8 @@ const ContactModal = ({ isOpen, onClose, onSubmit }) => {
     name: '',
     phone: '',
     email: '',
-    province: ''
+    description: ''
   });
-
-  const provinces = [
-    'Alberta',
-    'British Columbia',
-    'Manitoba',
-    'Ontario'
-  ];
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -38,7 +31,7 @@ const ContactModal = ({ isOpen, onClose, onSubmit }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     onSubmit(formData);
-    setFormData({ name: '', phone: '', email: '', province: '' });
+    setFormData({ name: '', phone: '', email: '', description: '' });
   };
 
   if (!isOpen) return null;
@@ -204,7 +197,7 @@ const ContactModal = ({ isOpen, onClose, onSubmit }) => {
               />
             </div>
 
-            <div style={{ marginBottom: '30px' }}>
+            <div style={{ marginBottom: '20px' }}>
               <label style={{
                 display: 'block',
                 marginBottom: '8px',
@@ -212,13 +205,13 @@ const ContactModal = ({ isOpen, onClose, onSubmit }) => {
                 fontWeight: '600',
                 color: '#374151'
               }}>
-                Province/Territory *
+                Tell us more about your requirements
               </label>
-              <select
-                name="province"
-                value={formData.province}
+              <textarea
+                name="description"
+                value={formData.description}
                 onChange={handleInputChange}
-                required
+                placeholder="Describe your needs or questions (optional)"
                 style={{
                   width: '100%',
                   padding: '14px 16px',
@@ -226,17 +219,10 @@ const ContactModal = ({ isOpen, onClose, onSubmit }) => {
                   borderRadius: '12px',
                   fontSize: '16px',
                   boxSizing: 'border-box',
-                  backgroundColor: 'white',
-                  cursor: 'pointer'
+                  minHeight: '80px',
+                  resize: 'vertical'
                 }}
-              >
-                <option value="">🇨🇦 Choose your province or territory</option>
-                {provinces.map((province) => (
-                  <option key={province} value={province}>
-                    {province}
-                  </option>
-                ))}
-              </select>
+              />
             </div>
 
             <div style={{ display: 'flex', gap: '12px' }}>
@@ -267,7 +253,7 @@ const ContactModal = ({ isOpen, onClose, onSubmit }) => {
                   fontSize: '16px',
                   fontWeight: '600',
                   color: '#ffffff',
-                  background: 'linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%)',
+                  background: '#d81671',
                   cursor: 'pointer'
                 }}
               >
@@ -284,9 +270,13 @@ const ContactModal = ({ isOpen, onClose, onSubmit }) => {
 const Page = () => {
   const [showModal, setShowModal] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const [isMobileDevice, setIsMobileDevice] = useState(false);
 
   useEffect(() => {
     setMounted(true);
+    if (typeof window !== 'undefined') {
+      setIsMobileDevice(window.innerWidth <= 767);
+    }
   }, []);
 
   const openModal = () => {
@@ -297,10 +287,23 @@ const Page = () => {
     setShowModal(false);
   };
 
-  const handleFormSubmit = (formData) => {
-    console.log('Form submitted:', formData);
-    alert('Thank you! We will contact you soon.');
-    setShowModal(false);
+  const handleFormSubmit = async (formData) => {
+    try {
+      const response = await fetch('/api/zoho-lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+      });
+      const result = await response.json();
+      if (response.ok && result.success) {
+        alert('Thank you! We will contact you soon.');
+        setShowModal(false);
+      } else {
+        alert(result.error || 'Failed to submit. Please try again.');
+      }
+    } catch (error) {
+      alert('An error occurred. Please try again.');
+    }
   };
 
   if (!mounted) {
@@ -312,7 +315,11 @@ const Page = () => {
       <Header1 />
       <HeroBanner1
         title="Grow your group benefits business 3x faster"
-        content="Transform your group benefits business with Canada's leading insurance platform. Access AI-powered quoting, paperless enrollment, and employee benefits automation—all in one place. Boost productivity, generate qualified leads, and close more deals with less effort."
+        content={
+          isMobileDevice
+            ? "Canada's leading insurance platform. AI-powered quoting, paperless enrollment, and benefits automation in one place. Boost productivity and close more deals with less effort."
+            : "Transform your group benefits business with Canada's leading insurance platform. Access AI-powered quoting, paperless enrollment, and employee benefits automation—all in one place. Boost productivity, generate qualified leads, and close more deals with less effort."
+        }
         btnname="Schedule a call now"
         btnurl="/contact"
         btntwo="Learn more"
@@ -326,22 +333,16 @@ const Page = () => {
         ratingcon="Rating"
         img="/assets/images/hero/HEADER-IMAGE-.png"
       />
-      <Brand1 />
+      <Brand1 />     
       
-      {/* Enhanced Expertise Section */}
-      <section className="expertise-section section-padding fix">
+      <section className="expertise-section fix wcu-container-wrapper style1" style={{marginTop: '2px'}}>
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-10">
-              <div className="expertise-content text-center" style={{
-                background: '#f8f7ff',
-                borderRadius: '24px',
-                padding: '60px 40px',
-                border: '1px solid rgba(139, 76, 246, 0.08)'
-              }}>
+              <div className="expertise-content text-center">
                 <div className="section-title" style={{ marginBottom: '24px' }}>
                   <h2 className="title wow fadeInUp" data-wow-delay=".2s" style={{
-                    fontSize: 'clamp(28px, 4vw, 48px)',
+                    fontSize: '38px',
                     fontWeight: '700',
                     lineHeight: '1.2',
                     color: '#1a202c',
@@ -370,45 +371,6 @@ const Page = () => {
                   marginTop: '40px',
                   flexWrap: 'wrap'
                 }}>
-                  <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '8px',
-                    color: '#6b7280',
-                    fontSize: '14px',
-                    fontWeight: '500'
-                  }}>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                      <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#10b981" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                    Broker-Built Platform
-                  </div>
-                  <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '8px',
-                    color: '#6b7280',
-                    fontSize: '14px',
-                    fontWeight: '500'
-                  }}>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                      <path d="M13 10V3L4 14H11L11 21L20 10L13 10Z" stroke="#f59e0b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                    Industry Expertise
-                  </div>
-                  <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '8px',
-                    color: '#6b7280',
-                    fontSize: '14px',
-                    fontWeight: '500'
-                  }}>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                      <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88M13 7C13 9.20914 11.2091 11 9 11C6.79086 11 5 9.20914 5 7C5 4.79086 6.79086 3 9 3C11.2091 3 13 4.79086 13 7Z" stroke="#3b82f6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                    Carrier Partnerships
-                  </div>
                 </div>
               </div>
             </div>
@@ -416,7 +378,7 @@ const Page = () => {
         </div>
       </section>
       
-      <div style={{ marginTop: '40px' }}></div>
+      <div className="hide-on-mobile" style={{ marginTop: '40px' }}></div>
       
       <div id="about">
         <About1
@@ -436,7 +398,7 @@ const Page = () => {
         />
       </div>
       
-      <div style={{ marginTop: '70px' }}></div>
+      <div className="hide-on-mobile" style={{ marginTop: '70px' }}></div>
       <Feature1 />
       
       <div id="how-it-works">
@@ -462,15 +424,15 @@ const Page = () => {
         />
       </div>
       
-      <div style={{ marginTop: '70px' }}></div>
+      <div className="hide-on-mobile" style={{ marginTop: '30px' }}></div>
       
       {/* Challenges Comparison Section */}
-      <section className="challenges-comparison section-padding" style={{ backgroundColor: '#fafafa', padding: '100px 0' }}>
+      <section className="challenges-comparison section-padding" >
         <div className="container">
           <div className="row">
             <div className="col-12">
               <div className="text-center mb-5">
-                <h2 className="display-5 fw-bold text-dark mb-4 wow fadeInUp" data-wow-delay=".2s" style={{ fontSize: 'clamp(32px, 4vw, 42px)', lineHeight: '1.2' }}>
+                <h2 className="display-5 fw-bold text-dark mb-4 wow fadeInUp" data-wow-delay=".2s" style={{ fontSize: '38px', lineHeight: '1.2' }}>
                   From challenge to competitive advantage
                 </h2>
               </div>
@@ -516,7 +478,7 @@ const Page = () => {
                         position: 'relative'
                       }}>
                         <div style={{
-                          background: 'linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%)',
+                          // background: 'linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%)',
                           padding: '28px',
                           height: '50%',
                           display: 'flex',
@@ -531,7 +493,7 @@ const Page = () => {
                             fontWeight: '800',
                             textTransform: 'uppercase',
                             letterSpacing: '1.4px',
-                            marginBottom: '20px',
+                            marginBottom: '2px',
                             display: 'flex',
                             alignItems: 'center',
                             color: '#dc2626'
@@ -546,8 +508,8 @@ const Page = () => {
                             CHALLENGE
                           </div>
                           <h4 style={{
-                            fontSize: '28px',
-                            fontWeight: '800',
+                            fontSize: '18px',
+                            // fontWeight: '600',
                             lineHeight: '1.1',
                             marginBottom: '0',
                             color: '#0f172a'
@@ -562,12 +524,13 @@ const Page = () => {
                           width: '48px',
                           height: '48px',
                           borderRadius: '50%',
-                          background: 'linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%)',
+                          background: '#d81671',
                           display: 'flex',
                           alignItems: 'center',
                           justifyContent: 'center',
-                          boxShadow: '0 6px 20px rgba(139, 92, 246, 0.4)',
-                          zIndex: 10
+                          boxShadow: '0 6px 20px rgba(216, 22, 113, 0.2)',
+                          zIndex: 10,
+                          
                         }}>
                           <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                             <path d="M7 13L12 18L17 13M12 6V18" stroke="white" strokeWidth="2.8" strokeLinecap="round" strokeLinejoin="round"/>
@@ -575,7 +538,7 @@ const Page = () => {
                         </div>
                         
                         <div style={{
-                          background: 'linear-gradient(135deg, #faf9ff 0%, #f4f1ff 100%)',
+                          background: '#f2fcff',
                           padding: '28px',
                           height: '50%',
                           display: 'flex',
@@ -589,7 +552,7 @@ const Page = () => {
                             fontWeight: '800',
                             textTransform: 'uppercase',
                             letterSpacing: '1.4px',
-                            marginBottom: '20px',
+                            marginBottom: '2px',
                             display: 'flex',
                             alignItems: 'center',
                             color: '#8b5cf6'
@@ -599,13 +562,13 @@ const Page = () => {
                               height: '10px',
                               borderRadius: '50%',
                               marginRight: '12px',
-                              background: '#8b5cf6'
+                              background: 'green'
                             }}></div>
-                            SOLUTION
+                            <span style={{color: 'green'}}>SOLUTION</span>
                           </div>
                           <h4 style={{
-                            fontSize: '28px',
-                            fontWeight: '800',
+                            fontSize: '18px',
+                            fontWeight: '600',
                             lineHeight: '1.1',
                             marginBottom: '0',
                             color: '#0f172a'
@@ -627,7 +590,7 @@ const Page = () => {
       <div id="contact">
         <Cta1
           subtitle="PolicyAdvisoreXchange"
-          title={<>Boost your group benefits business<br />with proven results</>}
+          title={<>Boost your group benefits business<br /> with proven results</>}
           content="Join brokers who increased their close rates using PolicyAdvisor eXchange. Our platform delivers lightning-fast quotes, professional proposals, and automated workflows to help you dominate the Canadian group benefits market."
           btnurl1="/contact"
           btnurl2="/about"
@@ -637,10 +600,12 @@ const Page = () => {
         />
       </div>
       
-      <div id="blog">
+      {/* <div id="blog">
         <Blog1 />
-      </div>
+      </div> */}
       
+      <div className="hide-on-mobile" style={{ marginTop: '70px' }}></div>
+
       <ContactModal 
         isOpen={showModal}
         onClose={closeModal}

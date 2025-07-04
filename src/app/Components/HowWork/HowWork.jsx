@@ -5,7 +5,7 @@ const HowWork = () => {
         <section className="work-process-section section-padding fix">
             <div className="work-process-container-wrapper style1">
                 <div className="container">
-                    <div className="section-title text-center mxw-565 mx-auto">
+                    <div className="three-steps section-title text-center mxw-565 mx-auto">
                         <SectionTitle
                             SubTitle="How it works"
                             Title="Three simple steps to group benefits success!"

@@ -41,8 +41,8 @@ const Brand1 = () => {
             <div className="brand-slider-container-wrapper style1">
                 <div className="container">
                     <div className="brand-slider-wrapper style1">
-                        <h1 className="single-section-title wow fadeInUp" data-wow-delay=".2s" suppressHydrationWarning={true}>
-                            30 of the largest group insurance providers have partnered with us
+                        <h1 className="single-section-title wow fadeInUp" data-wow-delay=".2s" suppressHydrationWarning={true} style={{marginTop: '20px'}}>
+                            Largest group insurance providers have partnered with us
                         </h1>
                         <div className="row">
                             <div className="slider-area brandSliderOne">

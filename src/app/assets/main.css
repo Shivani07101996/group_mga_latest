@@ -51,7 +51,7 @@ Description: Niotech - sass, App Landing Reactjs Template <
 /*----------------------------------------------
     # All Variables here
 ----------------------------------------------*/
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 :root {
   --body: #fff;
   --black: #000;
@@ -74,12 +74,15 @@ Description: Niotech - sass, App Landing Reactjs Template <
   --box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.06);
 }
 
+/* ecf9fd */
+
 /* 03.Typography */
 /* --------------------------------------------
     Template Default Fonts & Fonts Styles
  ---------------------------------------------- */
-body {
-  font-family: "Urbanist", sans-serif;
+
+ body {
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-weight: normal;
   line-height: 28px;
@@ -117,11 +120,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   margin: 0px;
   padding: 0;
   color: var(--title);
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   transition: all 0.4s ease-in-out;
 }
 
@@ -198,7 +201,7 @@ span {
 
 .info-text-style {
   color: var(--white);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -220,7 +223,7 @@ span {
 }
 .form-contl input::placeholder {
   color: var(--white);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -270,7 +273,7 @@ textarea.form-control:focus {
 
 label {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -436,7 +439,7 @@ input[type=radio]:checked ~ label::before {
   padding: 22px 36px;
   gap: 10px;
   color: var(--white);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   text-align: center;
   font-size: 18px;
   font-style: normal;
@@ -629,7 +632,7 @@ input[type=radio]:checked ~ label::before {
 
 .link-btn.style1 {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -643,7 +646,7 @@ input[type=radio]:checked ~ label::before {
   display: inline-block;
   background: var(--theme);
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -756,8 +759,8 @@ input[type=radio]:checked ~ label::before {
   .wcu-container-wrapper.style1 > .container {
     max-width: 1790px;
     border-radius: 50px;
-    background: #FAF8FF;
-    padding: 50px;
+    background: #f2fcff;
+    padding: 40px;
   }
   .about-container-wrapper.style2 .container {
     max-width: 1820px;
@@ -1676,7 +1679,7 @@ Description: Niotech - sass, App Landing Reactjs Template <
     Template Default Fonts & Fonts Styles
  ---------------------------------------------- */
 body {
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-weight: normal;
   line-height: 28px;
@@ -1714,11 +1717,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   margin: 0px;
   padding: 0;
   color: var(--title);
-  text-transform: capitalize;
   transition: all 0.4s ease-in-out;
 }
 
@@ -1795,7 +1797,7 @@ span {
 
 .info-text-style {
   color: var(--white);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -1817,7 +1819,7 @@ span {
 }
 .form-contl input::placeholder {
   color: var(--white);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -1867,7 +1869,7 @@ textarea.form-control:focus {
 
 label {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -2033,7 +2035,7 @@ input[type=radio]:checked ~ label::before {
   padding: 22px 36px;
   gap: 10px;
   color: var(--white);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   text-align: center;
   font-size: 18px;
   font-style: normal;
@@ -2226,7 +2228,7 @@ input[type=radio]:checked ~ label::before {
 
 .link-btn.style1 {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -2240,7 +2242,7 @@ input[type=radio]:checked ~ label::before {
   display: inline-block;
   background: var(--theme);
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -2353,7 +2355,7 @@ input[type=radio]:checked ~ label::before {
   .wcu-container-wrapper.style1 > .container {
     max-width: 1790px;
     border-radius: 50px;
-    background: #FAF8FF;
+    background: #f2fcff;
     padding: 50px;
   }
   .about-container-wrapper.style2 .container {
@@ -4191,7 +4193,7 @@ input[type=radio]:checked ~ label::before {
   }
 }
 .preloader .animation-preloader .txt-loading {
-  font: bold 5em "Urbanist", sans-serif, "Urbanist", sans-serif;
+  font: bold 5em "Lato", sans-serif, "Lato", sans-serif;
   text-align: center;
   user-select: none;
 }
@@ -4231,7 +4233,7 @@ input[type=radio]:checked ~ label::before {
   content: attr(data-text-preloader);
   left: 0;
   opacity: 0;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   position: absolute;
   top: -3px;
   transform: rotateY(-90deg);
@@ -4309,7 +4311,7 @@ input[type=radio]:checked ~ label::before {
 .single-section-title {
   color: var(--title);
   text-align: center;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
@@ -4330,7 +4332,7 @@ input[type=radio]:checked ~ label::before {
   border-radius: 100px;
   background: rgba(216, 22, 113, 0.15);
   color: var(--theme);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -4347,8 +4349,8 @@ input[type=radio]:checked ~ label::before {
 }
 .section-title .title {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
-  font-size: 48px;
+  font-family: "Lato", sans-serif;
+  font-size: 38px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -4362,8 +4364,8 @@ input[type=radio]:checked ~ label::before {
 }
 .section-title .section-desc {
   color: var(--text);
-  font-family: "Urbanist", sans-serif;
-  font-size: 20px;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 28px;
@@ -4600,7 +4602,7 @@ input[type=radio]:checked ~ label::before {
 }
 .fancy-box.style1 h4 {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -4618,8 +4620,8 @@ input[type=radio]:checked ~ label::before {
 }
 .fancy-box.style2 .content h4 {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
-  font-size: 24px;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: 34px;
@@ -4628,8 +4630,8 @@ input[type=radio]:checked ~ label::before {
 }
 .fancy-box.style2 .content .text {
   color: var(--text);
-  font-family: "Urbanist", sans-serif;
-  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 28px;
@@ -4645,7 +4647,7 @@ input[type=radio]:checked ~ label::before {
 }
 .fancy-box.style3 .content h4 {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -4655,7 +4657,7 @@ input[type=radio]:checked ~ label::before {
 }
 .fancy-box.style3 .content .text {
   color: var(--text);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -4674,7 +4676,7 @@ input[type=radio]:checked ~ label::before {
 }
 .fancy-box.style4 .content h5 {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -4683,8 +4685,8 @@ input[type=radio]:checked ~ label::before {
 }
 .fancy-box.style4 .content .text {
   color: var(--text);
-  font-family: "Urbanist", sans-serif;
-  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
@@ -4773,7 +4775,7 @@ input[type=radio]:checked ~ label::before {
 }
 .counter-box.style1 .counter {
   color: var(--theme);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -4782,7 +4784,7 @@ input[type=radio]:checked ~ label::before {
 }
 .counter-box.style1 p {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -4790,7 +4792,7 @@ input[type=radio]:checked ~ label::before {
 }
 .counter-box.style3 .counter {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -4800,7 +4802,7 @@ input[type=radio]:checked ~ label::before {
 }
 .counter-box.style3 .text {
   color: var(--text);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -4834,15 +4836,33 @@ input[type=radio]:checked ~ label::before {
   /* Center align CTA button in advantage section for mobile */
   .advantage-section .advantage-content .theme-btn {
     display: block;
-    margin: 0 auto;
+    margin: -14px auto;
     text-align: center;
     width: fit-content;
+  }
+
+  .feature-icon-container {
+    margin-bottom: 0 !important;
+  }
+
+  .feature-card {
+    padding: 10px 20px 18px 20px !important;
+  }
+
+  .intro-content .btn-wrapper.style1 {
+    margin-bottom: 0px !important;
+  }
+  .intro-thumb {
+    margin-top: 0px !important;
+  }
+  .single-section-title {
+    margin-top: -20px !important;
   }
 }
 
 .checklist.style1 li {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -4882,7 +4902,7 @@ input[type=radio]:checked ~ label::before {
 }
 .contact-meta .video-box h4 {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -4970,7 +4990,7 @@ input[type=radio]:checked ~ label::before {
   background-size: 0% 2px;
   color: transparent;
   -webkit-text-stroke: 1px #bcb8b1;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 80px;
   font-style: normal;
   font-weight: 700;
@@ -5046,7 +5066,7 @@ input[type=radio]:checked ~ label::before {
 }
 .modal-details .title-box .title h3 {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -5055,7 +5075,7 @@ input[type=radio]:checked ~ label::before {
 }
 .modal-details .title-box .price {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -5064,7 +5084,7 @@ input[type=radio]:checked ~ label::before {
 }
 .modal-details .desc p {
   color: var(--text);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -5081,7 +5101,7 @@ input[type=radio]:checked ~ label::before {
 }
 .progress-wrap .progress-meta .title {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -5089,7 +5109,7 @@ input[type=radio]:checked ~ label::before {
 }
 .progress-wrap .progress-meta .percentage {
   color: var(--theme);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -5231,7 +5251,7 @@ input[type=radio]:checked ~ label::before {
 }
 .comment-list .comment-item .post-comment .comment-content .name {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -5281,7 +5301,7 @@ input[type=radio]:checked ~ label::before {
 }
 .profile-meta .content h6 {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -5289,7 +5309,7 @@ input[type=radio]:checked ~ label::before {
 }
 .profile-meta .content p {
   color: var(--text);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -5313,7 +5333,7 @@ input[type=radio]:checked ~ label::before {
 }
 .comment-form .inner-title {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 900;
@@ -5440,7 +5460,7 @@ input.main-search-input::placeholder {
 }
 
 .section-padding {
-  padding: 50px 0;
+  padding: 40px 0;
 }
 @media (max-width: 1199px) {
   .section-padding {
@@ -5908,7 +5928,7 @@ input.main-search-input::placeholder {
 }
 .header-2 .header-right .header-contact-info.style2 .content h6 {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -5917,7 +5937,7 @@ input.main-search-input::placeholder {
 }
 .header-2 .header-right .header-contact-info.style2 .content h5 a {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -6185,7 +6205,7 @@ input.main-search-input::placeholder {
   text-align: left;
   position: relative;
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -6235,7 +6255,7 @@ input.main-search-input::placeholder {
   position: relative;
   z-index: 999;
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -6702,7 +6722,7 @@ input.main-search-input::placeholder {
   padding: 8px 24px;
   background-color: var(--theme2);
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -6722,7 +6742,7 @@ input.main-search-input::placeholder {
 .breadcrumb-wrapper .page-heading h1 {
   color: var(--white);
   color: var(--theme2);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -6835,7 +6855,7 @@ input.main-search-input::placeholder {
 .error-wrapper .error-items h1 {
   color: var(--title);
   text-align: center;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
@@ -6846,7 +6866,7 @@ input.main-search-input::placeholder {
 .error-wrapper .error-items p {
   color: var(--text);
   text-align: center;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -6906,7 +6926,7 @@ input.main-search-input::placeholder {
 .breadcumb-container-wrapper .breadcumb-wrapper .page-heading h1 {
   color: var(--title);
   text-align: center;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
@@ -6921,7 +6941,7 @@ input.main-search-input::placeholder {
 }
 .breadcumb-container-wrapper .breadcumb-wrapper .page-heading .links {
   color: var(--theme);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -6961,7 +6981,7 @@ input.main-search-input::placeholder {
 }
 .footer-top .fancy-box .item2 h6 {
   color: var(--white);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -6971,7 +6991,7 @@ input.main-search-input::placeholder {
 }
 .footer-top .fancy-box .item2 p {
   color: var(--white);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -7014,7 +7034,7 @@ input.main-search-input::placeholder {
 }
 .footer-widgets-wrapper .single-footer-widget .widget-head h3 {
   color: var(--white);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -7179,7 +7199,7 @@ input.main-search-input::placeholder {
   padding: 40px 0 40px;
   position: relative;
   z-index: 9;
-  background-color: #EFEFEF;
+  background-color: #002061;
 }
 .footer-widgets-wrapper.style1 .shape1 {
   position: absolute;
@@ -7333,7 +7353,7 @@ input.main-search-input::placeholder {
 .footer-widgets-wrapper.style1 .single-footer-widget .contact-box .info .link a {
   color: #565656;
   font-family: "Nunito", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 157.4%;
@@ -7565,7 +7585,7 @@ input.main-search-input::placeholder {
   background: rgba(216, 22, 113, 0.15);
   backdrop-filter: blur(2px);
   color: var(--theme);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -7580,7 +7600,7 @@ input.main-search-input::placeholder {
   border-radius: 30px;
   background: var(--white);
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -7589,11 +7609,11 @@ input.main-search-input::placeholder {
 }
 .intro-wrapper.style1 .intro-content .intro-section-title .intro-title {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
-  font-size: 64px;
+  font-family: "Lato", sans-serif;
+  font-size: 50px;
   font-style: normal;
   font-weight: 700;
-  line-height: 80px;
+  line-height: 58px;
   letter-spacing: -1.28px;
   margin-bottom: 15px;
   margin-top: 160px;
@@ -7608,17 +7628,19 @@ input.main-search-input::placeholder {
   .intro-wrapper.style1 .intro-content .intro-section-title .intro-title {
     font-size: 42px;
     line-height: 140%;
+    margin-top: 100px;
   }
 }
 @media (max-width: 575px) {
   .intro-wrapper.style1 .intro-content .intro-section-title .intro-title {
     font-size: 36px;
+    margin-top: 100px;
   }
 }
 .intro-wrapper.style1 .intro-content .intro-section-title .intro-desc {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
-  font-size: 20px;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 28px;
@@ -7700,7 +7722,7 @@ input.main-search-input::placeholder {
   backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
   color: var(--white);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -7714,7 +7736,7 @@ input.main-search-input::placeholder {
   border-radius: 30px;
   background: var(--white);
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -7729,7 +7751,7 @@ input.main-search-input::placeholder {
 }
 .intro-wrapper.style2 .intro-content .intro-section-title .intro-title {
   color: var(--white);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   text-align: center;
   font-size: 64px;
   font-style: normal;
@@ -7746,7 +7768,7 @@ input.main-search-input::placeholder {
 }
 .intro-wrapper.style2 .intro-content .intro-section-title .intro-desc {
   color: var(--white);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   text-align: center;
   font-size: 16px;
   font-style: normal;
@@ -7971,7 +7993,7 @@ input.main-search-input::placeholder {
 /* 17.Brand */
 .brandSliderOne {
   padding: 40px 0 40px;
-  border-bottom: 1px solid var(--border);
+  /* border-bottom: 1px solid var(--border); */
 }
 .brandSliderOne .brand-logo {
   text-align: center;
@@ -7986,7 +8008,7 @@ input.main-search-input::placeholder {
 }
 
 .brand-slider-wrapper.style1 .single-section-title {
-  font-size: 30px;
+  font-size: 38px;
 }
 .brand-slider-wrapper.style2 .single-section-title {
   font-size: 24px;
@@ -8005,7 +8027,7 @@ input.main-search-input::placeholder {
   width: 465px;
   height: 350px;
   border-radius: 0px 0px 50px 50px;
-  background: #E8E5FD;
+  background: #cff3fd;
 }
 @media (max-width: 767px) {
   .about-wrapper.style1 .about-thumb .bg {
@@ -8176,9 +8198,9 @@ input.main-search-input::placeholder {
   margin-top: 80px;
 }
 .work-process-box.style1 .step {
-  color: var(--theme);
+  color: #17B3E4;
   text-align: center;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -8191,13 +8213,13 @@ input.main-search-input::placeholder {
   align-items: center;
   gap: 10px;
   border-radius: 100px;
-  background: rgba(116, 68, 253, 0.15);
+  background: var(--theme2);
   margin-bottom: 10px;
 }
 .work-process-box.style1 .title {
   color: var(--title);
   text-align: center;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -8208,8 +8230,8 @@ input.main-search-input::placeholder {
 .work-process-box.style1 .text {
   color: var(--text);
   text-align: center;
-  font-family: "Urbanist", sans-serif;
-  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 28px;
@@ -8269,7 +8291,7 @@ input.main-search-input::placeholder {
 }
 .wp-wrapper.style2 .feature-box-wrapper.style2 .feature-box.style2 .content h5 {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -8279,7 +8301,7 @@ input.main-search-input::placeholder {
 }
 .wp-wrapper.style2 .feature-box-wrapper.style2 .feature-box.style2 .content .text {
   color: var(--text);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -8321,7 +8343,7 @@ input.main-search-input::placeholder {
   background-color: var(--theme);
   padding: 15px 20px 0;
   text-align: center;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -8338,12 +8360,12 @@ input.main-search-input::placeholder {
   font-size: 12px;
   font-weight: 500;
   transition: all 0.3s ease-in-out !important;
-  background-image: url(/assets/images/icon/chevron-right.svg);
+  background-image: url(/assets/images/icon/chevron-right.png);
   color: var(--theme2);
 }
 .wp-content .accordion-item .accordion-header .accordion-button:not(.collapsed):after {
   font-size: 12px;
-  background-image: url(/assets/images/icon/chevron-down.svg);
+  background-image: url(/assets/images/icon/chevron-down.png);
   font-weight: 500;
   color: var(--theme2);
   transform: rotate(0);
@@ -8367,7 +8389,7 @@ input.main-search-input::placeholder {
   padding-top: 15px;
   background-color: var(--theme);
   color: var(--white);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -8393,7 +8415,7 @@ input.main-search-input::placeholder {
 /* 20.Advantage */
 .advantage-wrapper.style1 {
   border-radius: 50px;
-  background: #FAF8FF;
+  background: #f2fcff;
 }
 .advantage-wrapper.style1 .advantage-content .checklist-wrapper {
   margin-bottom: 30px;
@@ -8629,7 +8651,7 @@ input.main-search-input::placeholder {
 .wcu-wrapper.style3 .wcu-thumb .thumb-box h5 {
   color: var(--white);
   text-align: center;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -8638,7 +8660,7 @@ input.main-search-input::placeholder {
 .wcu-wrapper.style3 .wcu-thumb .thumb-box .text {
   color: var(--white);
   text-align: center;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -8664,7 +8686,7 @@ input.main-search-input::placeholder {
 .wcu-wrapper.style3 .wcu-thumb .thumb-box .shape-box .shape-content h6 {
   color: var(--white);
   text-align: center;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -8673,7 +8695,7 @@ input.main-search-input::placeholder {
 .wcu-wrapper.style3 .wcu-thumb .thumb-box .shape-box .shape-content h3 {
   color: var(--white);
   text-align: center;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -8714,7 +8736,7 @@ input.main-search-input::placeholder {
 }
 .counter-box.style1 .counter .counter-number {
   color: var(--white);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 80px;
   font-style: normal;
   font-weight: 700;
@@ -8723,7 +8745,7 @@ input.main-search-input::placeholder {
 }
 .counter-box.style1 .counter .plus {
   color: var(--white);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 80px;
   font-style: normal;
   font-weight: 700;
@@ -8732,7 +8754,7 @@ input.main-search-input::placeholder {
 }
 .counter-box.style1 .text {
   color: var(--white);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -8817,12 +8839,12 @@ input.main-search-input::placeholder {
   font-size: 12px;
   font-weight: 500;
   transition: all 0.3s ease-in-out !important;
-  background-image: url(/assets/images/icon/chevron-right.svg);
-  color: var(--theme2);
+  background-image: url(/assets/images/icon/chevron-right.png);
+  color: #17B3E4;
 }
 .faq-content .accordion-item .accordion-header .accordion-button:not(.collapsed):after {
   font-size: 12px;
-  background-image: url(/assets/images/icon/chevron-down.svg);
+  background-image: url(/assets/images/icon/chevron-down.png);
   font-weight: 500;
   color: var(--theme2);
   transform: rotate(0);
@@ -8846,7 +8868,7 @@ input.main-search-input::placeholder {
   padding-top: 15px;
   background-color: var(--theme);
   color: var(--text);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -8873,17 +8895,17 @@ input.main-search-input::placeholder {
 }
 .faq-content.style1 .accordion-item .accordion-header .accordion-button {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
-  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: 28px;
   letter-spacing: -0.32px;
-  background-color: var(--theme3);
+  background-color: var(--border-2);
   border: none;
 }
 .faq-content.style1 .accordion-item .accordion-collapse .accordion-body {
-  background-color: var(--theme3);
+  background-color: var(--border-2);
   padding-bottom: 30px;
 }
 
@@ -8963,7 +8985,7 @@ input.main-search-input::placeholder {
   -o-border-radius: 6px;
 }
 .testimonial-card.style1 .testimonial-header .content h5 {
-  color: "Urbanist", sans-serif;
+  color: "Lato", sans-serif;
   font-family: var(--title);
   font-size: 24px;
   font-style: normal;
@@ -8972,7 +8994,7 @@ input.main-search-input::placeholder {
   letter-spacing: -0.48px;
 }
 .testimonial-card.style1 .testimonial-header .content p {
-  color: "Urbanist", sans-serif;
+  color: "Lato", sans-serif;
   font-family: var(--title);
   font-size: 16px;
   font-style: normal;
@@ -8986,7 +9008,7 @@ input.main-search-input::placeholder {
 }
 .testimonial-card.style1 .testimonial-body .desc {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -9021,7 +9043,7 @@ input.main-search-input::placeholder {
   -o-border-radius: 6px;
 }
 .testimonial-card.style2 .testimonial-header .content h5 {
-  color: "Urbanist", sans-serif;
+  color: "Lato", sans-serif;
   font-family: var(--title);
   font-size: 24px;
   font-style: normal;
@@ -9030,7 +9052,7 @@ input.main-search-input::placeholder {
   letter-spacing: -0.48px;
 }
 .testimonial-card.style2 .testimonial-header .content p {
-  color: "Urbanist", sans-serif;
+  color: "Lato", sans-serif;
   font-family: var(--title);
   font-size: 16px;
   font-style: normal;
@@ -9044,7 +9066,7 @@ input.main-search-input::placeholder {
 }
 .testimonial-card.style2 .testimonial-body .desc {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -9210,7 +9232,7 @@ input.main-search-input::placeholder {
 }
 .feature-box.style1 .feature-box-header .content h5 {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -9219,7 +9241,7 @@ input.main-search-input::placeholder {
 }
 .feature-box.style1 .feature-box-header .content .text {
   color: var(--text);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -9234,7 +9256,7 @@ input.main-search-input::placeholder {
 }
 .feature-box.style1 .feature-box-footer .content .day {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -9243,7 +9265,7 @@ input.main-search-input::placeholder {
 }
 .feature-box.style1 .feature-box-footer .content .time {
   color: var(--text);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -9475,7 +9497,7 @@ input.main-search-input::placeholder {
   position: relative;
   padding: 40px;
   border-radius: 30px;
-  background: #FAF8FF;
+  background: #f2fcff;
   z-index: 5;
 }
 @media (max-width: 1199px) {
@@ -9490,7 +9512,7 @@ input.main-search-input::placeholder {
 }
 .pricing-card.style1 .pricing-card-header h6 {
   color: var(--theme);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -9503,7 +9525,7 @@ input.main-search-input::placeholder {
 }
 .pricing-card.style1 .pricing-card-header .price-wrapper .price {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
@@ -9512,7 +9534,7 @@ input.main-search-input::placeholder {
 }
 .pricing-card.style1 .pricing-card-header .price-wrapper .text {
   color: var(--text);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -9577,7 +9599,7 @@ input.main-search-input::placeholder {
 }
 .pricing-wrapper.style1 .tab-section .nav-pills .nav-link {
   color: var(--text);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -9685,6 +9707,139 @@ input.main-search-input::placeholder {
     max-width: 100%;
   }
 }
+
+@media (max-width: 767px) {
+  .section-title {
+    margin-bottom: 12px !important;
+    padding-bottom: 10px !important;
+  }
+  .brand-slider-wrapper.style1 .single-section-title{
+    font-size: 28px;
+  }
+  .three-steps.section-title {
+    margin-bottom: -36px !important;
+    padding-bottom: 0 !important;
+  }
+  .expertise-section .section-title .title {
+    font-size: 28px !important;
+  }
+  .work-process-wrapper.style1 {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  .checklist.style1 li { 
+    margin-bottom: 4px;
+  }
+  .section-title .section-desc{
+    line-height: 18px;
+    margin-bottom: 4px;
+  }
+
+  .wcu-wrapper.style1 {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  .fancy-box.style2 .content .text { 
+    line-height: 18px;
+  }
+  .fancy-box.style2 .content h4 {
+    line-height: 26px;
+  }
+  .work-process-box.style1 .text { 
+    line-height: 18px;
+  }
+  .work-process-box.style1 .title{
+    line-height: 26px;
+  }
+  .work-process-box .text {
+    width: 100vw !important;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+.advantage-wrapper.style1 .advantage-thumb .thumb1 img{
+    margin-top: 20px;
+  }
+
+  .section-padding{
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+  .section-title .title {
+    font-size: 28px !important;
+  }
+  .display-5 {
+    font-size: 28px !important;
+  }
+  .brand-slider-section {
+    margin-bottom: 8px !important;
+    padding-bottom: 0 !important;
+  }
+  .expertise-section {
+    margin-top: 8px !important;
+    padding-top: 0 !important;
+  }
+  .brand-logo {
+    margin-left: 4px !important;
+    margin-right: 4px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .swiper-slide, .slick-slide {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    padding: 0 !important;
+  }
+  .wcu-wrapper.style1 .wcu-thumb{
+    min-height: 358px;
+  }
+  .challenge-tall-card {
+    height: 260px !important;
+    min-height: 0 !important;
+  }
+  .challenge-tall-card > div {
+    padding: 14px !important;
+    padding-left: 20px !important;
+  }
+  .challenges-comparison {
+    margin-bottom: 12px !important;
+    padding-bottom: 0 !important;
+  }
+  .faq-section {
+    margin-top: 20px !important;
+    padding-top: 0 !important;
+  }
+ 
+  .feature-section {
+    margin-top: 12px !important;
+    padding-top: 0 !important;
+  }
+  #about {
+    margin-bottom: 8px !important;
+    padding-bottom: 0 !important;
+  }
+  .wcu-section {
+    margin-top: 8px !important;
+    padding-top: 0 !important;
+  }
+  
+  .work-process-section {
+    margin-top: 0px !important;
+    padding-top: 0 !important;
+  }
+  .cta-section {
+    margin-bottom: 8px !important;
+    padding-bottom: 0 !important;
+  }
+  .footer-section {
+    margin-top: 50px !important;
+    padding-top: 0 !important;
+  }
+}
+
 .cta-wrapper.style2 {
   padding: 50px 60px;
   background-color: var(--theme);
@@ -9701,7 +9856,7 @@ input.main-search-input::placeholder {
 }
 .cta-wrapper.style2 .cta-content h2 {
   color: var(--white);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 500;
@@ -9710,7 +9865,7 @@ input.main-search-input::placeholder {
 }
 .cta-wrapper.style2 .cta-content p {
   color: var(--white);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -9765,14 +9920,11 @@ input.main-search-input::placeholder {
 }
 .blog-card.style1 .body h3 {
   margin-top: 30px;
-  padding-bottom: 24px;
-  margin-bottom: 24px;
-  border-bottom: 1px solid var(--border);
 }
 .blog-card.style1 .body h3 a {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
-  font-size: 24px;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: 34px;
@@ -9858,7 +10010,7 @@ input.main-search-input::placeholder {
 }
 .blog-card.style2 .blog-card-body .blog-title a {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
@@ -9874,7 +10026,7 @@ input.main-search-input::placeholder {
 }
 .blog-card.style2 .blog-card-body .btn-wrapper a {
   color: var(--text);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -9887,7 +10039,7 @@ input.main-search-input::placeholder {
 .blog-card.style2 .blog-card-body .btn-wrapper img,
 .blog-card.style2 .blog-card-body .btn-wrapper i {
   color: var(--text);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -9916,7 +10068,7 @@ input.main-search-input::placeholder {
   padding: 10px 18px;
   color: var(--white);
   text-align: center;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -9933,7 +10085,7 @@ input.main-search-input::placeholder {
 .blog-card.style2 .calendar .month {
   color: var(--text);
   text-align: center;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 13px;
   font-style: normal;
   font-weight: 700;
@@ -10207,7 +10359,7 @@ input.main-search-input::placeholder {
 }
 .news-standard-wrapper .news-standard-items .news-thumb .post-date h3 {
   color: var(--white);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   text-align: center;
   font-size: 24px;
   font-style: normal;
@@ -10217,7 +10369,7 @@ input.main-search-input::placeholder {
 }
 .news-standard-wrapper .news-standard-items .news-thumb .post-date h3 span {
   color: var(--white);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   text-align: center;
   font-size: 14px;
   font-style: normal;
@@ -10244,7 +10396,7 @@ input.main-search-input::placeholder {
 }
 .news-standard-wrapper .news-standard-items .news-content ul li {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -10259,7 +10411,7 @@ input.main-search-input::placeholder {
 }
 .news-standard-wrapper .news-standard-items .news-content h3 a {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -10349,7 +10501,7 @@ input.main-search-input::placeholder {
   display: inline-flex;
   padding: 10px 16px;
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -10370,6 +10522,30 @@ input.main-search-input::placeholder {
 @media (max-width: 767px) {
   .news-details-area .blog-post-details .tag-share-wrap .tagcloud a {
     margin-bottom: 5px;
+  }
+  .intro-section {
+    padding-top: 24px !important;
+    padding-bottom: 24px !important;
+  }
+  .intro-content {
+    margin-bottom: 12px !important;
+    padding: 0 8px !important;
+  }
+  .intro-section-title {
+    margin-bottom: 12px !important;
+  }
+  .mobile-header-image {
+    margin-top: 0.2rem !important;
+    margin-bottom: 0.2rem !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  .intro-thumb {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .hide-on-mobile {
+    display: none !important;
   }
 }
 .news-details-area .blog-post-details .tag-share-wrap .tagcloud a:hover {
@@ -10406,7 +10582,7 @@ input.main-search-input::placeholder {
   font-size: 32px;
   font-weight: 500;
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -10432,7 +10608,7 @@ input.main-search-input::placeholder {
 }
 .news-details-area .blog-post-details .comments-area .blog-single-comment .content .head .con h5 a {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -10515,7 +10691,7 @@ input.main-search-input::placeholder {
 }
 .service-box.style1 .content h3 {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -10525,7 +10701,7 @@ input.main-search-input::placeholder {
 }
 .service-box.style1 .content .text {
   color: var(--text);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -10562,7 +10738,7 @@ input.main-search-input::placeholder {
 }
 .service-box.style3 .content h3 {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -10572,7 +10748,7 @@ input.main-search-input::placeholder {
 }
 .service-box.style3 .content .text {
   color: var(--text);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -10641,7 +10817,7 @@ input.main-search-input::placeholder {
 }
 .service-wrapper.style3 h2 {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -10659,7 +10835,7 @@ input.main-search-input::placeholder {
 }
 .service-details-wrapper .title {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 50px;
   font-style: normal;
   font-weight: 700;
@@ -10688,7 +10864,7 @@ input.main-search-input::placeholder {
   border-radius: 100px;
   border: 1px solid rgba(30, 41, 46, 0.15);
   color: var(--Primary-Font-Color, #282C32);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -10700,7 +10876,7 @@ input.main-search-input::placeholder {
 }
 .service-details-wrapper .details-box1 .subtitle {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -10716,7 +10892,7 @@ input.main-search-input::placeholder {
 }
 .service-details-wrapper .details-box1 .text {
   color: var(--border-5);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -10729,7 +10905,7 @@ input.main-search-input::placeholder {
 }
 .service-details-wrapper .details-box2 .subtitle {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -10745,7 +10921,7 @@ input.main-search-input::placeholder {
 }
 .service-details-wrapper .details-box2 .text {
   color: var(--border-5);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -10770,7 +10946,7 @@ input.main-search-input::placeholder {
 .service-details-wrapper .details-box2 .feature-wrapper ul li {
   list-style-type: disc;
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -10798,7 +10974,7 @@ input.main-search-input::placeholder {
 .service-details-wrapper .details-box2 .progress-wrap .progress-meta .title {
   margin-top: 0;
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -10814,7 +10990,7 @@ input.main-search-input::placeholder {
 }
 .service-details-wrapper .details-box2 .text1 {
   color: var(--border-5);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -10822,7 +10998,7 @@ input.main-search-input::placeholder {
 }
 .service-details-wrapper .details-box2 .text2 {
   color: var(--border-5);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -10875,7 +11051,7 @@ input.main-search-input::placeholder {
 }
 .project-card.style1 .project-content h3 a {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 600;
@@ -10883,7 +11059,7 @@ input.main-search-input::placeholder {
 }
 .project-card.style1 .text {
   color: var(--theme);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -10911,7 +11087,7 @@ input.main-search-input::placeholder {
 }
 .project-details-wapper .single-desc .single-desc-title {
   color: #282C32;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 600;
@@ -10921,7 +11097,7 @@ input.main-search-input::placeholder {
 }
 .project-details-wapper .single-desc .text1 {
   color: var(--text);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -10931,7 +11107,7 @@ input.main-search-input::placeholder {
 }
 .project-details-wapper .single-desc .text2 {
   color: var(--text);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -10954,7 +11130,7 @@ input.main-search-input::placeholder {
 }
 .project-details-wapper .testimonial-wrap .testimonial-card .tesimonial-content .text3 {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -10964,7 +11140,7 @@ input.main-search-input::placeholder {
 }
 .project-details-wapper .testimonial-wrap .testimonial-card .tesimonial-content .testimonial-author {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -10978,7 +11154,7 @@ input.main-search-input::placeholder {
 }
 .project-details-wapper .single-desc2 .single-desc-title {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 600;
@@ -10988,7 +11164,7 @@ input.main-search-input::placeholder {
 }
 .project-details-wapper .single-desc2 .text1 {
   color: var(--text);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -10998,7 +11174,7 @@ input.main-search-input::placeholder {
 }
 .project-details-wapper .single-desc2 .text2 {
   color: var(--text);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -11039,7 +11215,7 @@ input.main-search-input::placeholder {
 .team-card.style1 .team-card-content h3 a {
   color: var(--title);
   text-align: center;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -11048,7 +11224,7 @@ input.main-search-input::placeholder {
 .team-card.style1 .designation {
   color: var(--title);
   text-align: center;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
@@ -11103,7 +11279,7 @@ input.main-search-input::placeholder {
 }
 .team-details-wrap .team-details-content .details-info .profile h3 {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -11114,7 +11290,7 @@ input.main-search-input::placeholder {
 }
 .team-details-wrap .team-details-content .details-info .profile span {
   color: var(--text);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
@@ -11193,7 +11369,7 @@ input.main-search-input::placeholder {
 }
 .team-simple-history .title {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -11212,7 +11388,7 @@ input.main-search-input::placeholder {
 }
 .team-simple-history .skills > .title {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -11226,7 +11402,7 @@ input.main-search-input::placeholder {
 }
 .team-simple-history .skills .progress-wrap .progress-meta .title {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -11384,7 +11560,7 @@ input.main-search-input::placeholder {
 }
 .main-sidebar .single-sidebar-widget .recent-post-area .recent-items .recent-content ul li {
   color: var(--theme);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -11400,7 +11576,7 @@ input.main-search-input::placeholder {
 }
 .main-sidebar .single-sidebar-widget .recent-post-area .recent-items .recent-content h6 a {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -11413,7 +11589,7 @@ input.main-search-input::placeholder {
   display: inline-flex;
   padding: 10px 16px;
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -11463,7 +11639,7 @@ input.main-search-input::placeholder {
   font-size: 18px;
   line-height: 1.25;
   margin: 10px 0 0px;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   text-transform: capitalize;
 }
 .recent-post .recent-post-meta {
@@ -11528,7 +11704,7 @@ input.main-search-input::placeholder {
   color: var(--text);
   font-size: 16px;
   font-weight: 500;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 600;
   color: var(--title);
   margin-bottom: 6px;
@@ -11565,10 +11741,10 @@ input.main-search-input::placeholder {
   margin-top: 20px;
   font-size: 18px;
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 .widget_shopping_cart .total strong {
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 .widget_shopping_cart .amount {
   padding-left: 5px;
@@ -11628,7 +11804,7 @@ input.main-search-input::placeholder {
   margin-bottom: 10px;
   color: var(--title);
   text-align: center;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -11640,7 +11816,7 @@ input.main-search-input::placeholder {
 .contact-info-box.style1 .contact-content .text {
   color: var(--text);
   text-align: center;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -11682,7 +11858,7 @@ input.main-search-input::placeholder {
 
 .contact-form.style1 .contact-title {
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 50px;
   font-style: normal;
   font-weight: 700;
@@ -11691,7 +11867,7 @@ input.main-search-input::placeholder {
 }
 .contact-form.style1 .desc {
   color: var(--text);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -11736,7 +11912,7 @@ input {
   background-color: transparent;
   font-size: 16px;
   width: 100%;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   transition: 0.4s ease-in-out;
   border-radius: 0px;
 }
@@ -11788,13 +11964,6 @@ select:after {
   right: 20px;
   height: 7px;
   width: 7px;
-}
-.single-select .list,
-.form-select .list,
-select .list {
-  width: 100%;
-  display: block;
-  border-radius: 0;
 }
 .single-select.style2,
 .form-select.style2,
@@ -12057,7 +12226,7 @@ label {
   margin-top: -0.3em;
   display: block;
   color: var(--title);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
 }
 
@@ -12190,7 +12359,7 @@ textarea.is-invalid {
 .technology-box-items.style-4 .title {
   color: var(--body-text2, rgba(38, 37, 46, 0.7));
   text-align: center;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -13133,7 +13302,7 @@ textarea.is-invalid {
   color: var(--title);
   box-shadow: none;
   text-align: center;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -13355,7 +13524,7 @@ html {
 @media (max-width: 575px) {
   .mobile-header-image {
     margin-top: 0.6rem !important;
-    max-width: 95% !important;
+    max-width: 120% !important;
   }
   
   .intro-section .intro-title {
@@ -13397,4 +13566,10 @@ html {
   .intro-wrapper.style1 .intro-thumb {
     padding: 80px 0 0 !important;
   }
+}
+
+/* Fix sticky header gap on all devices */
+.cs_site_header.cs_style_1.cs-gescout_sticky,
+.cs_site_header.cs_style_1.cs-gescout_show.cs-gescout_sticky {
+  top: 0 !important;
 }

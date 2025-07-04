@@ -20,20 +20,7 @@ const Blog1 = () => {
                                         📋 Group Benefits
                                     </div>
                                     <h3><Link href="/blog/blog-details">5 strategies to close more group benefits deals this quarter</Link></h3>
-                                    <div className="blog-meta">
-                                        <div className="item child1">
-                                            <span className="icon">
-                                            <img src="/assets/images/icon/userIcon.svg" alt="img" width={14} height={16} />
-                                            </span>
-                                            <span className="text">By PolicyAdvisoreXchange Team</span>
-                                        </div>
-                                        <div className="item">
-                                            <span className="icon">
-                                            <img src="/assets/images/icon/calendar.svg" alt="img" width={15} height={16} />
-                                            </span>
-                                            <span className="text">Dec 15, 2024</span>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -47,20 +34,6 @@ const Blog1 = () => {
                                         💼 Sales Tips
                                     </div>
                                     <h3><Link href="/blog/blog-details">How AI-powered quoting increases your commission by 40%</Link></h3>
-                                    <div className="blog-meta">
-                                        <div className="item child1">
-                                            <span className="icon">
-                                            <img src="/assets/images/icon/userIcon.svg" alt="img" width={14} height={16} />
-                                            </span>
-                                            <span className="text">By PolicyAdvisoreXchange Team</span>
-                                        </div>
-                                        <div className="item">
-                                            <span className="icon">
-                                            <img src="/assets/images/icon/calendar.svg" alt="img" width={15} height={16} />
-                                            </span>
-                                            <span className="text">Dec 12, 2024</span>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -74,20 +47,6 @@ const Blog1 = () => {
                                         🚀 Technology
                                     </div>
                                     <h3><Link href="/blog/blog-details">Why multi-carrier platforms are the future of group benefits</Link></h3>
-                                    <div className="blog-meta">
-                                        <div className="item child1">
-                                            <span className="icon">
-                                            <img src="/assets/images/icon/userIcon.svg" alt="img" width={14} height={16} />
-                                            </span>
-                                            <span className="text">By PolicyAdvisoreXchange Team</span>
-                                        </div>
-                                        <div className="item">
-                                            <span className="icon">
-                                            <img src="/assets/images/icon/calendar.svg" alt="img" width={15} height={16} />
-                                            </span>
-                                            <span className="text">Dec 10, 2024</span>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>

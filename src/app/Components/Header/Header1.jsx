@@ -58,13 +58,10 @@ export default function Header1({ variant }) {
                   >
                     <span></span>
                   </span>
-                  <Nav setMobileToggle={setMobileToggle} />
                 </div>
             </div>
             <div className="cs_main_header_right">
               <div className="header-btn d-flex align-items-center">
-
-              <a onClick={() => setSearchToggle(!searchToggle)} className="search-trigger search-icon d-none d-lg-block"><i className="bi bi-search"></i></a>
                 <div className="header-button ms-4 d-none d-lg-block">
                     <Link href="/contact" className="theme-btn">
                         <span>

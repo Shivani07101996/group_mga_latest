@@ -17,7 +17,7 @@ const About1 = ({img1,img2,subtitle,title,content,FeatureList,btnname,btnurl,onB
                                     </div>
                                     <ul className="checklist style1 wow fadeInUp" data-wow-delay=".2s">
                                     {FeatureList?.map((item, index) => (
-                                        <li key={index}><img src="/assets/images/icon/checkmarkIcon.svg" alt="img" width={30} height={30} /> {item}</li>
+                                        <li key={index}><img src="/assets/images/icon/checkmarkicon.png" alt="img" width={30} height={30} /> {item}</li>
                                     ))}
                                     </ul>
                                     <button className="theme-btn wow fadeInUp" data-wow-delay=".2s" onClick={onBtnClick || (() => {})}>{btnname}
@@ -42,10 +42,10 @@ const About1 = ({img1,img2,subtitle,title,content,FeatureList,btnname,btnurl,onB
                                     <div className="bg"></div>
                                     <div className="thumbShape1 d-none d-xxl-block cir36"><img src="/assets/images/shape/aboutThumbShape1_1.png" alt="img" width={67} height={67} /></div>
                                     <div className="thumbShape2 d-none d-xxl-block cir36">
-                                    <img src="/assets/images/shape/aboutThumbShape1_2.png" alt="img" width={24} height={24} />
+                                    <img src="/assets/images/shape/aboutThumbShape1_4.png" alt="img" width={24} height={24} />
                                         </div>
                                     <div className="thumbShape3 d-none d-xxl-block cir36 float-bob-y">
-                                    <img src="/assets/images/shape/aboutThumbShape1_3.png" alt="img" width={200} height={200} />
+                                    <img src="/assets/images/shape/OPT-2.png" alt="img" width={200} height={200} />
                                         </div>
                                     <div className="thumbShape4 d-none d-xxl-block cir36">
                                     <img src="/assets/images/shape/aboutThumbShape1_4.png" alt="img" width={28} height={28} />
