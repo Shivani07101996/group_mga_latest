@@ -17,7 +17,7 @@ const About1 = ({img1,img2,subtitle,title,content,FeatureList,btnname,btnurl,onB
                                     </div>
                                     <ul className="checklist style1 wow fadeInUp" data-wow-delay=".2s">
                                     {FeatureList?.map((item, index) => (
-                                        <li key={index}><img src="/assets/images/icon/checkmarkicon.png" alt="img" width={30} height={30} /> {item}</li>
+                                        <li key={index}><img src="/assets/images/icon/checkmarkIcon.png" alt="img" width={30} height={30} /> {item}</li>
                                     ))}
                                     </ul>
                                     <button className="theme-btn wow fadeInUp" data-wow-delay=".2s" onClick={onBtnClick || (() => {})}>{btnname}
