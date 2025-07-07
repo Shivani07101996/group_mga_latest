@@ -1,0 +1,32 @@
+stages:
+    - build
+    - deploy
+  
+# Build Stage - runs on all branches
+build:
+  stage: build
+  script:
+    - echo "Running build for branch $CI_COMMIT_BRANCH"
+    - npm install
+    - npm run build
+  tags:
+    - deploy
+
+# Deploy Stage - runs only on main branch
+deploy:
+  stage: deploy
+  script:
+    - echo "Deploying to EC2 from branch $CI_COMMIT_BRANCH"
+    - sudo docker build -t "$IMAGE_NAME" .
+    - sudo docker save -o "$PROJECT_PATH/$TAR_NAME" "$IMAGE_NAME"
+    - sudo docker stop "$IMAGE_NAME" || true
+    - sudo docker rm "$IMAGE_NAME" || true
+    - sudo docker load -i "$PROJECT_PATH/$TAR_NAME"
+    - sudo docker run -d -p "$PORT:$PORT" --name "$IMAGE_NAME" "$IMAGE_NAME"
+  only:
+    - main
+  tags:
+    - deploy
+
+
+
