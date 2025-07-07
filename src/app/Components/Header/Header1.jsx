@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import Nav from './Nav';
 import Link from 'next/link';
-export default function Header1({ variant }) {
+export default function Header1({ variant, onBtnClick }) {
   const [mobileToggle, setMobileToggle] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
   const [searchToggle, setSearchToggle] = useState(false);
@@ -63,12 +63,12 @@ export default function Header1({ variant }) {
             <div className="cs_main_header_right">
               <div className="header-btn d-flex align-items-center">
                 <div className="header-button ms-4 d-none d-lg-block">
-                    <Link href="/contact" className="theme-btn">
+                    <button type="button" className="theme-btn" onClick={onBtnClick || (() => {})}>
                         <span>
                             Get Started
                             <i className="bi bi-arrow-right"></i>
                         </span>
-                    </Link>
+                    </button>
 
                 </div>
               </div>

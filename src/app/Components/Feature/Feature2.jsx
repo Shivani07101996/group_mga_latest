@@ -113,21 +113,7 @@ const FeatureGrid = ({ features, title }) => {
             ))}
           </div>
           
-          <div className="text-center mt-30">
-            <Link className="theme-btn wow fadeInUp" data-wow-delay=".6s" href="/contact">
-              Start Free Trial
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <g clipPath="url(#clip0_91_29)">
-                  <path d="M11.6118 3.61182L10.8991 4.32454L14.0706 7.49603H0V8.50398H14.0706L10.8991 11.6754L11.6118 12.3882L16 7.99997L11.6118 3.61182Z" fill="white" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_91_29">
-                    <rect width="16" height="16" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </Link>
-          </div>
+          
         </div>
       </div>
     </section>

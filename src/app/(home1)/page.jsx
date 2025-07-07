@@ -312,7 +312,7 @@ const Page = () => {
 
   return (
     <>
-      <Header1 />
+      <Header1 onBtnClick={openModal} />
       <HeroBanner1
         title="Grow your group benefits business 3x faster"
         content={

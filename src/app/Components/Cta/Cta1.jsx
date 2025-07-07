@@ -50,21 +50,7 @@ const Cta1 = ({subtitle,title,content,btnurl1,btnurl2,img,onBtn1Click,onBtn2Clic
                                                     </defs>
                                                 </svg>
                                         </button>
-                                            <button onClick={onBtn2Click || (() => {})} style={{ 
-                                                display: 'inline-flex', 
-                                                alignItems: 'center', 
-                                                gap: '8px',
-                                                border: '2px solid #fff',
-                                                backgroundColor: 'transparent',
-                                                color: '#fff',
-                                                padding: '13px 30px',
-                                                borderRadius: '50px',
-                                                fontWeight: '600',
-                                                cursor: 'pointer',
-                                                transition: 'all 0.3s ease'
-                                            }}>
-                                                See How It Works
-                                        </button>
+                                            
                                         </div>
                                     </div>
                                 </div>
