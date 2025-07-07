@@ -17,6 +17,11 @@ deploy:
   stage: deploy
   script:
     - echo "Deploying to EC2 from branch $CI_COMMIT_BRANCH"
+    - echo "ZOHO_ACCESS_TOKEN=$ZOHO_ACCESS_TOKEN" >> .env
+    - echo "ZOHO_REFRESH_TOKEN=$ZOHO_REFRESH_TOKEN" >> .env
+    - echo "ZOHO_CLIENT_ID=$ZOHO_CLIENT_ID" >> .env
+    - echo "ZOHO_CLIENT_SECRET=$ZOHO_CLIENT_SECRET" >> .env
+    - echo "NEXT_PUBLIC_ZOHO_ORG_ID=$NEXT_PUBLIC_ZOHO_ORG_ID" >> .env
     - sudo docker build -t "$IMAGE_NAME" .
     - sudo docker save -o "$PROJECT_PATH/$TAR_NAME" "$IMAGE_NAME"
     - sudo docker stop "$IMAGE_NAME" || true
