@@ -12,7 +12,7 @@ import Cta1 from '../Components/Cta/Cta1';
 import Blog1 from '../Components/Blog/Blog1';
 import Header1 from '../Components/Header/Header1';
 
-const ContactModal = ({ isOpen, onClose, onSubmit }) => {
+const ContactModal = ({ isOpen, onClose, onSubmit, formSuccess, loading }) => {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -110,157 +110,170 @@ const ContactModal = ({ isOpen, onClose, onSubmit }) => {
           </button>
         </div>
 
-        {/* Form */}
-        <div style={{ padding: '20px 30px 30px 30px' }}>
-          <form onSubmit={handleSubmit}>
-            <div style={{ marginBottom: '20px' }}>
-              <label style={{
-                display: 'block',
-                marginBottom: '8px',
-                fontSize: '14px',
-                fontWeight: '600',
-                color: '#374151'
-              }}>
-                Full Name *
-              </label>
-              <input
-                type="text"
-                name="name"
-                value={formData.name}
-                onChange={handleInputChange}
-                required
-                placeholder="Enter your full name"
-                style={{
-                  width: '100%',
-                  padding: '14px 16px',
-                  border: '2px solid #e2e8f0',
-                  borderRadius: '12px',
-                  fontSize: '16px',
-                  boxSizing: 'border-box'
-                }}
-              />
+        {/* Form, Loading, or Success Message */}
+        <div style={{ padding: '20px 30px 30px 30px', minHeight: '200px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          {loading ? (
+            <div style={{ width: '100%', textAlign: 'center' }}>
+              <div className="spinner" style={{ margin: '0 auto 16px', width: '40px', height: '40px', border: '4px solid #e2e8f0', borderTop: '4px solid #d81671', borderRadius: '50%', animation: 'spin 1s linear infinite' }} />
+              <p style={{ color: '#374151', fontSize: '18px', marginTop: '16px' }}>Submitting your request...</p>
+              <style>{`@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }`}</style>
             </div>
-
-            <div style={{ marginBottom: '20px' }}>
-              <label style={{
-                display: 'block',
-                marginBottom: '8px',
-                fontSize: '14px',
-                fontWeight: '600',
-                color: '#374151'
-              }}>
-                Phone Number *
-              </label>
-              <input
-                type="tel"
-                name="phone"
-                value={formData.phone}
-                onChange={handleInputChange}
-                required
-                placeholder="(555) 123-4567"
-                style={{
-                  width: '100%',
-                  padding: '14px 16px',
-                  border: '2px solid #e2e8f0',
-                  borderRadius: '12px',
-                  fontSize: '16px',
-                  boxSizing: 'border-box'
-                }}
-              />
+          ) : formSuccess ? (
+            <div style={{ width: '100%', textAlign: 'center' }}>
+              <h3 style={{ color: '#16a34a', fontWeight: 700, fontSize: '22px', marginBottom: '12px' }}>Thank you!</h3>
+              <p style={{ color: '#374151', fontSize: '18px' }}>We will contact you soon.</p>
             </div>
-
-            <div style={{ marginBottom: '20px' }}>
-              <label style={{
-                display: 'block',
-                marginBottom: '8px',
-                fontSize: '14px',
-                fontWeight: '600',
-                color: '#374151'
-              }}>
-                Email Address *
-              </label>
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleInputChange}
-                required
-                placeholder="your.email@company.com"
-                style={{
-                  width: '100%',
-                  padding: '14px 16px',
-                  border: '2px solid #e2e8f0',
-                  borderRadius: '12px',
-                  fontSize: '16px',
-                  boxSizing: 'border-box'
-                }}
-              />
-            </div>
-
-            <div style={{ marginBottom: '20px' }}>
-              <label style={{
-                display: 'block',
-                marginBottom: '8px',
-                fontSize: '14px',
-                fontWeight: '600',
-                color: '#374151'
-              }}>
-                Tell us more about your requirements
-              </label>
-              <textarea
-                name="description"
-                value={formData.description}
-                onChange={handleInputChange}
-                placeholder="Describe your needs or questions (optional)"
-                style={{
-                  width: '100%',
-                  padding: '14px 16px',
-                  border: '2px solid #e2e8f0',
-                  borderRadius: '12px',
-                  fontSize: '16px',
-                  boxSizing: 'border-box',
-                  minHeight: '80px',
-                  resize: 'vertical'
-                }}
-              />
-            </div>
-
-            <div style={{ display: 'flex', gap: '12px' }}>
-              <button
-                type="button"
-                onClick={onClose}
-                style={{
-                  flex: '1',
-                  padding: '14px 24px',
-                  border: '2px solid #e2e8f0',
-                  borderRadius: '12px',
-                  fontSize: '16px',
+          ) : (
+            <form onSubmit={handleSubmit} style={{ width: '100%' }}>
+              <div style={{ marginBottom: '20px' }}>
+                <label style={{
+                  display: 'block',
+                  marginBottom: '8px',
+                  fontSize: '14px',
                   fontWeight: '600',
-                  color: '#64748b',
-                  backgroundColor: '#ffffff',
-                  cursor: 'pointer'
-                }}
-              >
-                Cancel
-              </button>
-              <button
-                type="submit"
-                style={{
-                  flex: '1',
-                  padding: '14px 24px',
-                  border: 'none',
-                  borderRadius: '12px',
-                  fontSize: '16px',
+                  color: '#374151'
+                }}>
+                  Full Name *
+                </label>
+                <input
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleInputChange}
+                  required
+                  placeholder="Enter your full name"
+                  style={{
+                    width: '100%',
+                    padding: '14px 16px',
+                    border: '2px solid #e2e8f0',
+                    borderRadius: '12px',
+                    fontSize: '16px',
+                    boxSizing: 'border-box'
+                  }}
+                />
+              </div>
+
+              <div style={{ marginBottom: '20px' }}>
+                <label style={{
+                  display: 'block',
+                  marginBottom: '8px',
+                  fontSize: '14px',
                   fontWeight: '600',
-                  color: '#ffffff',
-                  background: '#d81671',
-                  cursor: 'pointer'
-                }}
-              >
-                Submit Request
-              </button>
-            </div>
-          </form>
+                  color: '#374151'
+                }}>
+                  Phone Number *
+                </label>
+                <input
+                  type="tel"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleInputChange}
+                  required
+                  placeholder="(555) 123-4567"
+                  style={{
+                    width: '100%',
+                    padding: '14px 16px',
+                    border: '2px solid #e2e8f0',
+                    borderRadius: '12px',
+                    fontSize: '16px',
+                    boxSizing: 'border-box'
+                  }}
+                />
+              </div>
+
+              <div style={{ marginBottom: '20px' }}>
+                <label style={{
+                  display: 'block',
+                  marginBottom: '8px',
+                  fontSize: '14px',
+                  fontWeight: '600',
+                  color: '#374151'
+                }}>
+                  Email Address *
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  required
+                  placeholder="your.email@company.com"
+                  style={{
+                    width: '100%',
+                    padding: '14px 16px',
+                    border: '2px solid #e2e8f0',
+                    borderRadius: '12px',
+                    fontSize: '16px',
+                    boxSizing: 'border-box'
+                  }}
+                />
+              </div>
+
+              <div style={{ marginBottom: '20px' }}>
+                <label style={{
+                  display: 'block',
+                  marginBottom: '8px',
+                  fontSize: '14px',
+                  fontWeight: '600',
+                  color: '#374151'
+                }}>
+                  Tell us more about your requirements
+                </label>
+                <textarea
+                  name="description"
+                  value={formData.description}
+                  onChange={handleInputChange}
+                  placeholder="Describe your needs or questions (optional)"
+                  style={{
+                    width: '100%',
+                    padding: '14px 16px',
+                    border: '2px solid #e2e8f0',
+                    borderRadius: '12px',
+                    fontSize: '16px',
+                    boxSizing: 'border-box',
+                    minHeight: '80px',
+                    resize: 'vertical'
+                  }}
+                />
+              </div>
+
+              <div style={{ display: 'flex', gap: '12px' }}>
+                <button
+                  type="button"
+                  onClick={onClose}
+                  style={{
+                    flex: '1',
+                    padding: '14px 24px',
+                    border: '2px solid #e2e8f0',
+                    borderRadius: '12px',
+                    fontSize: '16px',
+                    fontWeight: '600',
+                    color: '#64748b',
+                    backgroundColor: '#ffffff',
+                    cursor: 'pointer'
+                  }}
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  style={{
+                    flex: '1',
+                    padding: '14px 24px',
+                    border: 'none',
+                    borderRadius: '12px',
+                    fontSize: '16px',
+                    fontWeight: '600',
+                    color: '#ffffff',
+                    background: '#d81671',
+                    cursor: 'pointer'
+                  }}
+                >
+                  Submit Request
+                </button>
+              </div>
+            </form>
+          )}
         </div>
       </div>
     </div>
@@ -271,6 +284,8 @@ const Page = () => {
   const [showModal, setShowModal] = useState(false);
   const [mounted, setMounted] = useState(false);
   const [isMobileDevice, setIsMobileDevice] = useState(false);
+  const [formSuccess, setFormSuccess] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     setMounted(true);
@@ -281,13 +296,18 @@ const Page = () => {
 
   const openModal = () => {
     setShowModal(true);
+    setFormSuccess(false); // Reset success state when opening modal
+    setLoading(false); // Reset loading state
   };
 
   const closeModal = () => {
     setShowModal(false);
+    setFormSuccess(false); // Reset on close
+    setLoading(false); // Reset loading state
   };
 
   const handleFormSubmit = async (formData) => {
+    setLoading(true);
     try {
       const response = await fetch('/api/zoho-lead', {
         method: 'POST',
@@ -296,12 +316,19 @@ const Page = () => {
       });
       const result = await response.json();
       if (response.ok && result.success) {
-        alert('Thank you! We will contact you soon.');
-        setShowModal(false);
+        setFormSuccess(true);
+        setLoading(false);
+        setTimeout(() => {
+          setShowModal(false);
+          setFormSuccess(false);
+          setLoading(false);
+        }, 3000);
       } else {
+        setLoading(false);
         alert(result.error || 'Failed to submit. Please try again.');
       }
     } catch (error) {
+      setLoading(false);
       alert('An error occurred. Please try again.');
     }
   };
@@ -610,6 +637,8 @@ const Page = () => {
         isOpen={showModal}
         onClose={closeModal}
         onSubmit={handleFormSubmit}
+        formSuccess={formSuccess}
+        loading={loading}
       />
     </>
   );
